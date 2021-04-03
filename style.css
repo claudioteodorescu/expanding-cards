@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffeeee;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  position: relative;
+  -webkit-transition: -webkit-box-flex 0.7s ease-in;
+  transition: -webkit-box-flex 0.7s ease-in;
+  transition: flex 0.7s ease-in;
+  transition: flex 0.7s ease-in, -webkit-box-flex 0.7s ease-in, -ms-flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  margin: 0px auto;
+  display: block;
+}
+
+.panel1 {
+  background-image: url(https://images.pexels.com/photos/5282269/pexels-photo-5282269.jpeg);
+}
+
+.panel2 {
+  background-image: url(https://images.pexels.com/photos/5409751/pexels-photo-5409751.jpeg);
+}
+
+.panel3 {
+  background-image: url(https://images.pexels.com/photos/3329292/pexels-photo-3329292.jpeg);
+}
+
+.panel4 {
+  background-image: url(https://images.pexels.com/photos/5708073/pexels-photo-5708073.jpeg);
+}
+
+.panel5 {
+  background-image: url(https://images.pexels.com/photos/2771785/pexels-photo-2771785.jpeg);
+}
+
+.active {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.active h3 {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
